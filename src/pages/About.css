@@ -1,0 +1,108 @@
+/* About Page Styles */
+
+.about-page__hero {
+    padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-2xl);
+    text-align: center;
+    background: var(--gradient-dark);
+    position: relative;
+}
+
+.about-page__hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center top, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+}
+
+.about-page__hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about-page__title {
+    font-size: var(--text-5xl);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+}
+
+.about-page__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Timeline */
+.about-page__timeline {
+    background: var(--color-bg-secondary);
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: var(--space-3xl);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--color-primary), rgba(212, 175, 55, 0.2));
+}
+
+.timeline__item {
+    position: relative;
+    padding-bottom: var(--space-2xl);
+}
+
+.timeline__item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline__item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-3xl) - 6px);
+    top: 0;
+    width: 14px;
+    height: 14px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--color-bg-secondary), 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.timeline__year {
+    font-family: var(--font-display);
+    font-size: var(--text-xl);
+    font-weight: 700;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-sm);
+}
+
+.timeline__content h3 {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-xs);
+}
+
+.timeline__content p {
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: var(--space-2xl);
+    }
+
+    .timeline__item::before {
+        left: calc(-1 * var(--space-2xl) - 6px);
+    }
+}

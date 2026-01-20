@@ -1,0 +1,210 @@
+/* Testimonials Styles */
+
+.testimonials {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.testimonials__bg-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+    filter: blur(40px);
+}
+
+.testimonials .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Testimonials Grid */
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-xl);
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.testimonial-card__quote {
+    font-family: var(--font-display);
+    font-size: var(--text-6xl);
+    line-height: 0.5;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-sm);
+}
+
+.testimonial-card__text {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    font-style: italic;
+    flex: 1;
+    margin: 0;
+}
+
+.testimonial-card__rating {
+    display: flex;
+    gap: 2px;
+}
+
+.testimonials__star {
+    color: var(--color-text-muted);
+    font-size: var(--text-lg);
+}
+
+.testimonials__star--filled {
+    color: var(--color-primary);
+}
+
+.testimonial-card__author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.testimonial-card__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--color-primary);
+}
+
+.testimonial-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.testimonial-card__name {
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.testimonial-card__role {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+/* Carousel (Mobile) */
+.testimonials__carousel {
+    display: none;
+}
+
+.testimonials__dots {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-sm);
+    margin-top: var(--space-lg);
+}
+
+.testimonials__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.testimonials__dot--active {
+    background: var(--color-primary);
+    transform: scale(1.2);
+}
+
+/* Trust Indicators */
+.testimonials__trust {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-2xl);
+    margin-top: var(--space-3xl);
+    padding: var(--space-xl) var(--space-2xl);
+    background: var(--color-bg-card);
+    border-radius: var(--radius-xl);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.testimonials__trust-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.testimonials__trust-num {
+    font-family: var(--font-display);
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.testimonials__trust-text {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.testimonials__trust-divider {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .testimonials__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonials__grid .testimonial-card:last-child {
+        grid-column: span 2;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials__grid {
+        display: none;
+    }
+
+    .testimonials__carousel {
+        display: block;
+    }
+
+    .testimonials__trust {
+        flex-direction: column;
+        gap: var(--space-lg);
+    }
+
+    .testimonials__trust-divider {
+        width: 60px;
+        height: 1px;
+    }
+}
