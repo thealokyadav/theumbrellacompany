@@ -1,5 +1,19 @@
 // Product data for The Umbrella Company
-// Images sourced from high-quality stock/product photos
+// Using premium locally generated umbrella images
+
+// Import umbrella images
+import heroUmbrella from '../assets/umbrellas/hero_umbrella.png';
+import golfUmbrellaStorm from '../assets/umbrellas/golf_umbrella_storm.png';
+import executiveUmbrella from '../assets/umbrellas/executive_umbrella.png';
+import compactUmbrella from '../assets/umbrellas/compact_umbrella.png';
+import fashionUmbrellaRed from '../assets/umbrellas/fashion_umbrella_red.png';
+import golfTitanium from '../assets/umbrellas/golf_titanium.png';
+import urbanShadow from '../assets/umbrellas/urban_shadow.png';
+import azureGradient from '../assets/umbrellas/azure_gradient.png';
+import travelCompact from '../assets/umbrellas/travel_compact.png';
+import platinumPremium from '../assets/umbrellas/platinum_premium.png';
+import meadowFloral from '../assets/umbrellas/meadow_floral.png';
+import carbonElite from '../assets/umbrellas/carbon_elite.png';
 
 export const categories = [
   { id: 'all', name: 'All Umbrellas' },
@@ -19,7 +33,7 @@ export const products = [
     originalPrice: 3499,
     description: 'Handcrafted luxury umbrella with 24K gold-plated handle and premium silk canopy.',
     features: ['24K Gold Handle', 'Silk Canopy', 'Lifetime Warranty'],
-    image: 'https://images.unsplash.com/photo-1534309466160-70b22cc6252c?w=500&h=600&fit=crop',
+    image: heroUmbrella,
     badge: 'Best Seller'
   },
   {
@@ -30,7 +44,7 @@ export const products = [
     originalPrice: 2599,
     description: 'Professional grade golf umbrella with 60" canopy and wind-resistant frame.',
     features: ['60" Canopy', 'Wind Resistant', 'UV Protection'],
-    image: 'https://images.unsplash.com/photo-1517686748843-bb360cfc62b3?w=500&h=600&fit=crop',
+    image: golfUmbrellaStorm,
     badge: 'Premium'
   },
   {
@@ -41,7 +55,7 @@ export const products = [
     originalPrice: 1799,
     description: 'Sleek automatic open/close umbrella perfect for the modern professional.',
     features: ['Auto Open/Close', 'Carbon Fiber', 'Teflon Coating'],
-    image: 'https://images.unsplash.com/photo-1523803326055-13445c526e97?w=500&h=600&fit=crop',
+    image: executiveUmbrella,
     badge: null
   },
   {
@@ -52,7 +66,7 @@ export const products = [
     originalPrice: 1299,
     description: 'Ultra-compact travel umbrella that fits perfectly in your handbag.',
     features: ['Ultra Compact', 'Quick Dry', 'Ergonomic Handle'],
-    image: 'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500&h=600&fit=crop',
+    image: compactUmbrella,
     badge: 'New'
   },
   {
@@ -63,7 +77,7 @@ export const products = [
     originalPrice: 2199,
     description: 'Statement piece umbrella with hand-painted floral designs and bamboo handle.',
     features: ['Hand Painted', 'Bamboo Handle', 'Limited Edition'],
-    image: 'https://images.unsplash.com/photo-1563191911-e65f8655ebf9?w=500&h=600&fit=crop',
+    image: fashionUmbrellaRed,
     badge: 'Limited'
   },
   {
@@ -74,7 +88,7 @@ export const products = [
     originalPrice: 2999,
     description: 'Heavy-duty golf umbrella with titanium reinforced ribs for maximum durability.',
     features: ['Titanium Ribs', 'Double Canopy', 'Anti-Rust'],
-    image: 'https://images.unsplash.com/photo-1504439904031-93ded9f93e4e?w=500&h=600&fit=crop',
+    image: golfTitanium,
     badge: null
   },
   {
@@ -85,7 +99,7 @@ export const products = [
     originalPrice: 1499,
     description: 'Matte black automatic umbrella with stealth design for city dwellers.',
     features: ['Matte Finish', 'LED Light', 'Reflective Strip'],
-    image: 'https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=500&h=600&fit=crop',
+    image: urbanShadow,
     badge: 'Popular'
   },
   {
@@ -96,7 +110,7 @@ export const products = [
     originalPrice: 1899,
     description: 'Ocean-inspired umbrella with gradient blue canopy and pearl handle.',
     features: ['Gradient Design', 'Pearl Handle', 'Water Repellent'],
-    image: 'https://images.unsplash.com/photo-1527482937786-6f498f32d20c?w=500&h=600&fit=crop',
+    image: azureGradient,
     badge: null
   },
   {
@@ -107,7 +121,7 @@ export const products = [
     originalPrice: 1099,
     description: 'Lightweight travel companion with reinforced construction.',
     features: ['Ultra Light', 'Reinforced', 'Travel Case'],
-    image: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=500&h=600&fit=crop',
+    image: travelCompact,
     badge: null
   },
   {
@@ -118,7 +132,7 @@ export const products = [
     originalPrice: 5499,
     description: 'Our flagship umbrella featuring platinum accents and Italian leather handle.',
     features: ['Platinum Accents', 'Italian Leather', 'Collector\'s Edition'],
-    image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=500&h=600&fit=crop',
+    image: platinumPremium,
     badge: 'Exclusive'
   },
   {
@@ -129,7 +143,7 @@ export const products = [
     originalPrice: 1599,
     description: 'Spring-inspired floral umbrella with wooden curved handle.',
     features: ['Floral Print', 'Wooden Handle', 'UV Blocking'],
-    image: 'https://images.unsplash.com/photo-1519692933481-e162a57d6721?w=500&h=600&fit=crop',
+    image: meadowFloral,
     badge: 'Seasonal'
   },
   {
@@ -140,7 +154,7 @@ export const products = [
     originalPrice: 2299,
     description: 'Premium automatic umbrella with full carbon fiber construction.',
     features: ['Full Carbon', 'Nano Coating', 'One-Touch'],
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop',
+    image: carbonElite,
     badge: 'Tech'
   }
 ];

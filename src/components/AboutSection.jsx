@@ -1,4 +1,5 @@
 import './AboutSection.css';
+import craftsmanWorkshop from '../assets/umbrellas/craftsman_workshop.png';
 
 const AboutSection = ({ isFullPage = false }) => {
     const features = [
@@ -67,7 +68,7 @@ const AboutSection = ({ isFullPage = false }) => {
                     <div className="about__visual">
                         <div className="about__image-container">
                             <img
-                                src="https://images.unsplash.com/photo-1517686748843-bb360cfc62b3?w=600&h=700&fit=crop"
+                                src={craftsmanWorkshop}
                                 alt="Craftsman at work"
                                 className="about__image"
                             />

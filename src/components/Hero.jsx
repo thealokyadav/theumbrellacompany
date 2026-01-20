@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Hero.css';
+import heroUmbrella from '../assets/umbrellas/hero_umbrella.png';
 
 const Hero = () => {
     return (
@@ -56,7 +57,7 @@ const Hero = () => {
                     <div className="hero__umbrella-showcase">
                         <div className="hero__umbrella-glow"></div>
                         <img
-                            src="https://images.unsplash.com/photo-1534309466160-70b22cc6252c?w=600&h=800&fit=crop"
+                            src={heroUmbrella}
                             alt="Premium Umbrella"
                             className="hero__umbrella-image"
                         />
